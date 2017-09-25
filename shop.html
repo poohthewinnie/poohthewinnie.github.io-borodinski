@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Borodinski</title>
+    <title>Средства для ухода &#9670; Барбершоп &laquo;Бородинский&raquo;</title>
     <meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
+	<header class="page-header">
 		<div class="container clearfix">
 			<nav class="main-navigation">
 				<ul>
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
-					<li><a href="#">Прайс-лист</a></li>
-					<li class="active"><a href="#">Магазин</a></li>
+					<li><a href="/price.html">Прайс-лист</a></li>
+					<li class="main-navigation_item_current"><span>Магазин</span></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
@@ -28,25 +28,25 @@
 	<main class="container">
 		<h1>Средства для ухода</h1>
 		<ul class="breadcrumbs">
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="#">Магазин</a></li>
-			<li class="active"><a href="#">Средства для ухода</a></li>
+			<li><a href="/index.html">Главная</a></li>
+			<li><a href="/shop.html">Магазин</a></li>
+			<li class="breadcrumbs_current"><span>Средства для ухода</span></li>
 		</ul>
 		<form action="" method="get">
 			<fieldset>
 				<legend>Производители:</legend>
-				<label><input type="checkbox" checked>Baxter of California</label>
-				<label><input type="checkbox">Mr Natty</label>
-				<label><input type="checkbox" checked>Suavecito</label>
-				<label><input type="checkbox">Malin+Goetz</label>
-				<label><input type="checkbox">Murray's</label>
-				<label><input type="checkbox" checked>American crew</label>
+				<label><input type="checkbox" value="1" checked>Baxter of California</label>
+				<label><input type="checkbox" value="2">Mr Natty</label>
+				<label><input type="checkbox" value="3" checked>Suavecito</label>
+				<label><input type="checkbox" value="4">Malin+Goetz</label>
+				<label><input type="checkbox" value="5">Murray's</label>
+				<label><input type="checkbox" value="6" checked>American crew</label>
 			</fieldset>
 			<fieldset>
 				<legend>Группы товаров:</legend>
-				<label><input type="radio">Бритвенные принадлежности</label>
-				<label><input type="radio" checked>Средства для ухода</label>
-				<label><input type="radio">Аксессуары</label>
+				<label><input type="radio" name="category" value="1">Бритвенные принадлежности</label>
+				<label><input type="radio" name="category" value="2" checked>Средства для ухода</label>
+				<label><input type="radio" name="category" value="3">Аксессуары</label>
 			</fieldset>
 			<button type="button" class="btn">Показать</button>
 		</form>
@@ -139,11 +139,11 @@
 			</ul>
 		</div>
 	</main>
-	<footer class="main-footer clearfix">
+	<footer class="page-footer clearfix">
 		<div class="container">
 			<section class="footer-contacts">
 				<p>
-					Барбершоп "Бородинский"<br>
+					Барбершоп &laquo;Бородинский&raquo;<br>
 					Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 					<a href="#">Как нас найти?</a><br>
 					Телефон: +7 (495) 666-02-66
