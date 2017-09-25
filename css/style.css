@@ -67,7 +67,7 @@ body {
 .main-navigation a:hover {
 	background: #242424;
 }
-.main-navigation_selected span{
+.main-navigation_item_current span{
 	display: block;
 	margin: 25px 20px;
 	margin-bottom: 0;
@@ -111,17 +111,17 @@ body {
 	height: 204px;
 	margin: 0 auto 25px;
 }
-.advantage {
+.features {
+	margin-bottom: 80px;
+}
+.features-item {
 	float: left;
 	width: 300px;
 	margin-right: 20px;
 	text-align: center;
 }
-.advantage:last-child {
+.features-item:last-child {
 	margin-right: 0;
-}
-.advantages {
-	margin-bottom: 80px;
 }
 .index-content {
 	margin-bottom: 35px;
@@ -139,7 +139,7 @@ body {
 	float: right;
 	width: 300px;
 }
-.main-footer {
+.page-footer {
 	margin-top: 65px;
 	padding-top: 60px;
 	padding-bottom: 40px;
