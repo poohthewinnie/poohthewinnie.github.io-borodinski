@@ -18,8 +18,24 @@ body {
 	margin: 0 auto;
 	padding: 0 10px;
 }
-
-.main-header {
+.btn {
+	display: inline-block;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	color: #ffffff;
+	background: #000000;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 25px;
+	margin-right: 16px;
+	border: none;
+	outline: none;
+}
+.page-header {
 	color: #ffffff;
 	background: #000000;
 	margin-bottom: 60px;
@@ -50,6 +66,14 @@ body {
 }
 .main-navigation a:hover {
 	background: #242424;
+}
+.main-navigation_selected span{
+	display: block;
+	margin: 25px 20px;
+	margin-bottom: 0;
+	padding-bottom: 21px;
+	border-bottom: 4px solid #ffffff;
+	cursor: default;
 }
 .user-block {
 	float: right;
@@ -108,7 +132,8 @@ body {
 }
 .index-content-left {
 	float: left;
-	width: 380px;
+	width: 340px;
+	padding-right: 40px 
 }
 .index-content-right {
 	float: right;
@@ -132,14 +157,4 @@ body {
 .footer-developer {
 	float: right;
 	width: 180px;
-}
-
-.btn {
-	display: inline-block;
-	color: white;
-	background: black;
-	text-transform: uppercase; 
-	text-decoration: none;
-	padding: 5px 10px;
-	border: none;
 }
