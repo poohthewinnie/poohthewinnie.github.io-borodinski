@@ -184,6 +184,7 @@ body {
 }
 .page-footer-contacts a {
 	text-decoration: underline;
+	color: #ffffff;
 }
 .page-footer-social {
 	float: left;
