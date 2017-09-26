@@ -38,7 +38,7 @@ body {
 .page-header {
 	color: #ffffff;
 	background: #000000;
-	margin-bottom: 60px;
+	margin-bottom: 57px;
 	
 }
 .main-navigation {
@@ -50,7 +50,7 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	font-size: 0;
+	font-size: 0; /*pixel-perfect - без этого свойства*/
 }
 .main-navigation li {
 	display: inline-block;
@@ -61,17 +61,24 @@ body {
 .main-navigation a {
 	display: block;
 	color: #ffffff;
+	font-weight: 700;
 	text-decoration: none;
-	padding: 25px 20px;
+	padding: 26px 20px;
 }
 .main-navigation a:hover {
 	background: #242424;
 }
-.main-navigation_item_current span{
+.main-navigation a.main-navigation-item_logo {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	width: 111px;
+	height: 24px;
+}
+.main-navigation .main-navigation-item_current {
 	display: block;
 	margin: 25px 20px;
 	margin-bottom: 0;
-	padding-bottom: 21px;
+	padding-bottom: 23px;
 	border-bottom: 4px solid #ffffff;
 	cursor: default;
 }
@@ -85,7 +92,7 @@ body {
 	vertical-align: top;
 	font-size: 16px;
 	line-height: 20px;
-	padding: 25px 20px 25px 50px;
+	padding: 25px 22px 26px 50px;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -95,21 +102,22 @@ body {
 	top: 28px;
 	left: 20px;
 	width: 18px;
-	height: 15px;
-	background: #ff0000;
+	height: 18px;
+	background: url("../img/sprite.png") no-repeat -3px -59px;
+	opacity: 0.3;
 }
 .user-block .login:hover {
 	background: #242424;
 }
 .user-block .login:hover::before {
-	background: #ffffff;
+	opacity: 1;
 }
 
 .index-logo {
 	display: block;
 	width: 368px;
 	height: 204px;
-	margin: 0 auto 25px;
+	margin: 0 auto 20px;
 }
 .features {
 	margin-bottom: 80px;
@@ -123,11 +131,34 @@ body {
 .features-item:last-child {
 	margin-right: 0;
 }
+.features-name {
+	display: block;
+	position: relative;
+	font-size: 30px;
+	line-height: 42px;
+	padding-bottom: 38px;
+	margin-bottom: 30px;
+}
+
+.features-name::after {
+	content: "";
+	background: #ffffff;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: calc(50% - 10px);
+	bottom: 0px;
+	transform: rotate(45deg)
+}
+.features-item p {
+	margin: 10px;
+	margin-bottom: 0;
+}
 .index-content {
 	margin-bottom: 35px;
 	padding: 50px 80px;
 	background: url("../img/index-content-divider.png") no-repeat center,
-		#ffffff url("../img/bg-light-pattern.jpeg");
+		#f8f5f2 url("../img/bg-light-pattern.jpeg");
 	color: #000000;
 }
 .index-content-left {
@@ -145,16 +176,108 @@ body {
 	padding-bottom: 40px;
 	background: #222222;
 }
-.footer-contacts {
+.page-footer-contacts {
 	float: left;
 	width: 320px;
 	margin-right: 60px;
 }
-.footer-social {
+.page-footer-social {
 	float: left;
 	width: 180px;
 }
-.footer-developer {
+.page-footer-developer {
 	float: right;
 	width: 180px;
 }
+
+/* sprite styles
+.sprite {
+    background-image: url("");
+    background-repeat: no-repeat;
+}
+.sprite-fb-black {
+    width: 12px;
+    height: 22px;
+    background-position: -3px -3px;
+}
+
+.sprite-fb-white {
+    width: 12px;
+    height: 22px;
+    background-position: -3px -31px;
+}
+
+.sprite-icon-login {
+    width: 18px;
+    height: 16px;
+    background-position: -3px -59px;
+}
+
+.sprite-inst-black {
+    width: 21px;
+    height: 21px;
+    background-position: -3px -81px;
+}
+
+.sprite-inst-white {
+    width: 21px;
+    height: 21px;
+    background-position: -3px -108px;
+}
+
+.sprite-vk-black {
+    width: 25px;
+    height: 16px;
+    background-position: -3px -135px;
+}
+
+.sprite-vk-white {
+    width: 25px;
+    height: 16px;
+    background-position: -3px -157px;
+}
+
+*/
+
+/*scrollbar styles:
+::-webkit-scrollbar
+::-webkit-scrollbar-button
+::-webkit-scrollbar-track
+::-webkit-scrollbar-track-piece 
+::-webkit-scrollbar-thumb
+::-webkit-scrollbar-corner
+::-webkit-resizer
+
+
+::-webkit-scrollbar-button {
+background-image:url('');
+background-repeat:no-repeat;
+width:50px;
+height:0px
+}
+
+::-webkit-scrollbar-track {
+background-color:#ecedee
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 0px;
+border-radius: 0px;
+background-color:#6dc0c8;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background-color:#56999f;
+}
+
+::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:40px;
+height:0px
+}
+
+::-webkit-scrollbar{
+width: 15px;
+}
+*/
