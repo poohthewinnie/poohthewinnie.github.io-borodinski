@@ -148,7 +148,8 @@ body {
 	height: 20px;
 	left: calc(50% - 10px);
 	bottom: 0px;
-	transform: rotate(45deg)
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg)
 }
 .features-item p {
 	margin: 10px;
@@ -180,6 +181,9 @@ body {
 	float: left;
 	width: 320px;
 	margin-right: 60px;
+}
+.page-footer-contacts a {
+	text-decoration: underline;
 }
 .page-footer-social {
 	float: left;
