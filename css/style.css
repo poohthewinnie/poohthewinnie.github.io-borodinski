@@ -4,9 +4,15 @@ body {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 24px;
-	color: #ffffff;
 	text-transform: uppercase;
+}
+body.index-page {
 	background: #000000 url("../img/body-bg.jpeg") no-repeat center top;
+	color: #ffffff;
+}
+body.regular-page {
+	background: #f8f5f2 url("../img/bg-light-pattern.jpeg") no-repeat center top;
+	color: #000000;
 }
 .clearfix::after {
 	content: "";
@@ -164,7 +170,7 @@ body {
 	left: calc(50% - 10px);
 	bottom: 0px;
 	-webkit-transform: rotate(45deg);
-	        transform: rotate(45deg)
+	        transform: rotate(45deg);
 }
 .features-item p {
 	margin: 10px;
@@ -291,10 +297,20 @@ body {
 	background: #252525 url("../img/footer-bg.jpg");
 	color: #ffffff;
 }
+.page-footer p{
+	margin: 0;
+	margin-bottom: 15px;
+	text-align: center;
+}
 .page-footer-contacts {
 	float: left;
 	width: 320px;
 	margin-right: 60px;
+	text-align: right;
+}
+.page-footer-contacts p{
+	text-align: left;
+	margin-bottom: 0;
 }
 .page-footer-contacts a {
 	color: #ffffff;
@@ -340,11 +356,6 @@ body {
 	float: right;
 	max-width: 180px;
 }
-.page-footer-copyright p{
-	margin: 0;
-	margin-bottom: 15px;
-	text-align: center;
-}
 .page-footer-copyright .btn {
 	margin: 0;
 }
@@ -353,6 +364,82 @@ body {
 	background: #ffffff;
 }
 
+
+.page-title {
+	margin: 0;
+	margin-bottom: 20px; 
+	font-size: 30px;
+	line-height: 42px;
+}
+.breadcrumbs {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 50px;
+	font-size: 0;
+}
+.breadcrumbs li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 24px;
+}
+.breadcrumbs a {
+	text-decoration: none;
+	color: #000000;
+	padding-right: 28px;
+	margin-right: 23px;
+	position: relative;
+}
+.breadcrumbs a:hover {
+	color: #aba9a7;
+}
+.breadcrumbs a:after {
+	content: "";
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	background: #000000;
+	right: 0;
+	bottom: 5px;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+.breadcrumbs_current {
+	color: #aba9a7;
+}
+.pricelist-promotitle {
+	font-size: 46px;
+	line-height: 56px;
+	display: block;
+	text-align: center;
+	position: relative;
+	margin-bottom: 70px;
+}
+.pricelist-promotitle:before {
+	content: "";
+	position: absolute;
+	width: 160px;
+	height: 0px;
+	border: 1px solid #000000;
+	left: 0;
+	top: 28px;
+}
+.pricelist-promotitle:after {
+	content: "";
+	position: absolute;
+	width: 160px;
+	height: 0px;
+	border: 1px solid #000000;
+	right: 0;
+	top: 28px;
+}
+.pricelist-content h3 {
+	margin: 0;
+	margin-bottom: 25px; 
+	font-size: 24px;
+	line-height: 30px;
+}
 /* sprite styles
 .sprite {
     background-image: url("");
