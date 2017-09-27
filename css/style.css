@@ -11,7 +11,7 @@ body.index-page {
 	color: #ffffff;
 }
 body.regular-page {
-	background: #f8f5f2 url("../img/bg-light-pattern.jpeg") no-repeat center top;
+	background: #f8f5f2 url("../img/bg-light-pattern.jpeg") repeat;
 	color: #000000;
 }
 .clearfix::after {
@@ -55,7 +55,33 @@ body.regular-page {
 .btn:disabled:hover {
 	background: #000000;
 }
-
+.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list li {
+	position: relative;
+	margin: 0;
+	margin-left: 20px;
+}
+.list li:before {
+	content: "";
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	background: #000000;
+	top: 8px;
+	left: -20px;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+.list-loose li {
+	margin-bottom: 20px;
+}
+.list-tight li {
+	margin-bottom: 5px;
+}
 .page-header {
 	color: #ffffff;
 	background: #000000;
@@ -383,28 +409,28 @@ body.regular-page {
 	vertical-align: top;
 	font-size: 14px;
 	line-height: 24px;
-}
-.breadcrumbs a {
-	text-decoration: none;
-	color: #000000;
-	padding-right: 28px;
-	margin-right: 23px;
 	position: relative;
 }
-.breadcrumbs a:hover {
-	color: #aba9a7;
-}
-.breadcrumbs a:after {
+.breadcrumbs li:not(:last-child):after {
 	content: "";
 	position: absolute;
 	width: 7px;
 	height: 7px;
 	background: #000000;
-	right: 0;
-	bottom: 5px;
+	right: 21px;
+	top: 8px;
 	-webkit-transform: rotate(45deg);
 	        transform: rotate(45deg);
 }
+.breadcrumbs a {
+	text-decoration: none;
+	color: #000000;
+	margin-right: 51px;
+}
+.breadcrumbs a:hover {
+	color: #aba9a7;
+}
+
 .breadcrumbs_current {
 	color: #aba9a7;
 }
@@ -421,7 +447,7 @@ body.regular-page {
 	position: absolute;
 	width: 160px;
 	height: 0px;
-	border: 1px solid #000000;
+	border-top: 2px solid #000000;
 	left: 0;
 	top: 28px;
 }
@@ -430,15 +456,24 @@ body.regular-page {
 	position: absolute;
 	width: 160px;
 	height: 0px;
-	border: 1px solid #000000;
+	border-top: 2px solid #000000;
 	right: 0;
 	top: 28px;
 }
+
+.pricelist-content-left {
+	float: left;
+	width: 300px;
+}
+.pricelist-content-right {
+	float: right;
+	width: 500px;
+}
 .pricelist-content h3 {
 	margin: 0;
-	margin-bottom: 25px; 
-	font-size: 24px;
-	line-height: 30px;
+	margin-bottom: 30px; 
+	font-size: 30px;
+	line-height: 42px;
 }
 /* sprite styles
 .sprite {
