@@ -118,7 +118,7 @@ body {
 	left: 20px;
 	width: 18px;
 	height: 18px;
-	background: url("../img/sprite.png") no-repeat -3px -59px;
+	background: url("../img/sprite.png") no-repeat -15px -119px;
 	opacity: 0.3;
 }
 .user-block .login:hover {
@@ -284,7 +284,7 @@ body {
 }
 .page-footer-social {
 	float: left;
-	width: 180px;
+	width: 200px;
 	text-align: center
 }
 .btn_social {
@@ -295,52 +295,84 @@ body {
 	background: #000000 url("../img/sprite.png") no-repeat center;
 	font-size: 0;
 }
-.btn_fb {
-    background-position: 11px -20px;
-}
-.btn_inst {
-    background-position: -3px -108px;
+.btn_social:hover {
+	background: #ffffff url("../img/sprite.png") no-repeat center;
 }
 .btn_vk {
-    background-position: -3px -157px;
+    background-position: -6px -299px;
+}
+.btn_fb {
+    background-position: 1px -57px;
+}
+.btn_inst {
+    background-position: -3px -206px;
+}
+.btn_vk:hover {
+    background-position: -6px -253px;
+}
+.btn_fb:hover {
+    background-position: 1px -5px;
+}
+.btn_inst:hover {
+    background-position: -3px -155px;
 }
 .page-footer-developer {
 	float: right;
 	width: 180px;
+	text-align: center;
+}
+.page-footer-developer .btn{
+	margin: 0;
+	
 }
 
 /* sprite styles
 .sprite {
     background-image: url("");
     background-repeat: no-repeat;
-}
+
 .sprite-fb-black {
     width: 12px;
     height: 22px;
-    background-position: -3px -3px;
+    background-position: -15px -15px;
 }
 
-
+.sprite-fb-white {
+    width: 12px;
+    height: 22px;
+    background-position: -15px -67px;
+}
 
 .sprite-icon-login {
     width: 18px;
     height: 16px;
-    background-position: -3px -59px;
+    background-position: -15px -119px;
 }
 
 .sprite-inst-black {
     width: 21px;
     height: 21px;
-    background-position: -3px -81px;
+    background-position: -15px -165px;
 }
 
-
+.sprite-inst-white {
+    width: 21px;
+    height: 21px;
+    background-position: -15px -216px;
+}
 
 .sprite-vk-black {
     width: 25px;
     height: 16px;
-    background-position: -3px -135px;
+    background-position: -15px -267px;
 }
+
+.sprite-vk-white {
+    width: 25px;
+    height: 16px;
+    background-position: -15px -313px;
+}
+
 
 
 
