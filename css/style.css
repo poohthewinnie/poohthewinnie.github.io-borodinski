@@ -30,11 +30,26 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
-	padding: 5px 25px;
+	vertical-align: top;
+	padding: 10px 33px;
 	margin-right: 16px;
 	border: none;
 	outline: none;
 }
+.btn:hover,
+.btn:active {
+	background: #663d15;
+}
+.btn.btn_disabled,
+.btn:disabled {
+	cursor: default;
+	opacity: 0.5;
+}
+.btn.btn_disabled:hover,
+.btn:disabled:hover {
+	background: #000000;
+}
+
 .page-header {
 	color: #ffffff;
 	background: #000000;
@@ -76,9 +91,9 @@ body {
 }
 .main-navigation .main-navigation-item_current {
 	display: block;
-	margin: 25px 20px;
+	margin: 26px 20px;
 	margin-bottom: 0;
-	padding-bottom: 23px;
+	padding-bottom: 22px;
 	border-bottom: 4px solid #ffffff;
 	cursor: default;
 }
@@ -92,7 +107,7 @@ body {
 	vertical-align: top;
 	font-size: 16px;
 	line-height: 20px;
-	padding: 25px 22px 26px 50px;
+	padding: 26px 22px 26px 50px;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -164,18 +179,97 @@ body {
 }
 .index-content-left {
 	float: left;
-	width: 340px;
-	padding-right: 40px 
+	width: 350px;
+	padding-right: 30px;
 }
 .index-content-right {
 	float: right;
 	width: 300px;
 }
+.index-content-title {
+	margin: 0;
+	margin-bottom: 25px; 
+	font-size: 30px;
+	line-height: 42px;
+}
+.index-content p {
+	margin: 0;
+	margin-bottom: 25px;
+}
+.news-preview {
+	margin: 0;
+	padding: 0;
+	padding-right: 35px;
+	list-style: none;
+}
+.news-preview li{
+	margin-bottom: 25px;
+}
+.news-preview p {
+	margin: 0;
+}
+.news-preview time {
+	font-weight: 400;
+	text-transform: lowercase;
+}
+
+.gallery {
+	position: relative;
+	height: 260px;
+}
+.gallery-content {
+	margin: 0;
+	height: 164px;
+	background: #cccccc;
+	border: 7px solid #ffffff;
+}
+.gallery-content img{
+	width: 286px;
+	height: 164px;
+}
+.gallery .btn {
+	position: absolute;
+	bottom: 0;
+	width: 140px;
+	margin: 0;
+}
+.gallery-btn_prev {
+	left: 0;
+}
+.gallery-btn_next {
+	right: 0;
+}
+.appointment-form input{
+	width: 106px;
+	padding: 7px 15px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font: inherit;
+	text-transform: uppercase;
+	color: #000000;
+	border: 2px solid #000000;
+	background: #f9f6f3;
+	outline: none;
+}
+.appointment-form input:nth-child(2n){
+	margin-right: 0;
+}
+.appointment-form .btn{
+	clear: both;
+	width: 100%;
+}
+.appointment-form input:focus,
+.appointment-form input:hover {
+	border: 2px solid #663d15;
+}
+
 .page-footer {
 	margin-top: 65px;
 	padding-top: 60px;
 	padding-bottom: 40px;
-	background: #222222;
+	background: #252525 url("../img/footer-bg.jpg");
+	color: #ffffff;
 }
 .page-footer-contacts {
 	float: left;
@@ -183,12 +277,32 @@ body {
 	margin-right: 60px;
 }
 .page-footer-contacts a {
-	text-decoration: underline;
 	color: #ffffff;
+}
+.page-footer-contacts a:hover {
+	text-decoration: none;
 }
 .page-footer-social {
 	float: left;
 	width: 180px;
+	text-align: center
+}
+.btn_social {
+	width: 43px;
+	height: 43px;
+	padding: 0;
+	margin: 0 2px;
+	background: #000000 url("../img/sprite.png") no-repeat center;
+	font-size: 0;
+}
+.btn_fb {
+    background-position: 11px -20px;
+}
+.btn_inst {
+    background-position: -3px -108px;
+}
+.btn_vk {
+    background-position: -3px -157px;
 }
 .page-footer-developer {
 	float: right;
@@ -206,11 +320,7 @@ body {
     background-position: -3px -3px;
 }
 
-.sprite-fb-white {
-    width: 12px;
-    height: 22px;
-    background-position: -3px -31px;
-}
+
 
 .sprite-icon-login {
     width: 18px;
@@ -224,11 +334,7 @@ body {
     background-position: -3px -81px;
 }
 
-.sprite-inst-white {
-    width: 21px;
-    height: 21px;
-    background-position: -3px -108px;
-}
+
 
 .sprite-vk-black {
     width: 25px;
@@ -236,53 +342,31 @@ body {
     background-position: -3px -135px;
 }
 
-.sprite-vk-white {
-    width: 25px;
-    height: 16px;
-    background-position: -3px -157px;
-}
+
 
 */
+::-webkit-scrollbar{
+	width: 15px;
+}
+::-webkit-scrollbar-track {
+	background-color: #000000;
+}
+::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: #ffffff;
+}
+::-webkit-scrollbar-corner {
+	background-color: #000000;
+}
 
 /*scrollbar styles:
-::-webkit-scrollbar
-::-webkit-scrollbar-button
-::-webkit-scrollbar-track
-::-webkit-scrollbar-track-piece 
-::-webkit-scrollbar-thumb
-::-webkit-scrollbar-corner
-::-webkit-resizer
-
-
-::-webkit-scrollbar-button {
-background-image:url('');
-background-repeat:no-repeat;
-width:50px;
-height:0px
-}
-
-::-webkit-scrollbar-track {
-background-color:#ecedee
-}
-
-::-webkit-scrollbar-thumb {
--webkit-border-radius: 0px;
-border-radius: 0px;
-background-color:#6dc0c8;
-}
-
-::-webkit-scrollbar-thumb:hover{
-background-color:#56999f;
-}
-
-::-webkit-resizer{
-background-image:url('');
-background-repeat:no-repeat;
-width:40px;
-height:0px
-}
-
-::-webkit-scrollbar{
-width: 15px;
-}
+::-webkit-scrollbar -- панелька
+::-webkit-scrollbar-button -- кнопки вверх/вниз
+::-webkit-scrollbar-track -- полоска под бегунком
+::-webkit-scrollbar-track-piece -- полоска без бегунка
+::-webkit-scrollbar-thumb -- бегунок
+::-webkit-scrollbar-corner -- уголок пересечения верт. и гориз. прокрутки
+::-webkit-resizer -- изменение размера в уголке
 */
