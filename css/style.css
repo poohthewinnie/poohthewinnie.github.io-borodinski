@@ -138,7 +138,7 @@ body.regular-page {
 .main-navigation a:hover {
 	background: #242424;
 }
-.main-navigation a.main-navigation-item_logo {
+.main-navigation .main-navigation-item_logo {
 	padding-top: 24px;
 	padding-bottom: 24px;
 	width: 111px;
@@ -147,7 +147,8 @@ body.regular-page {
 .main-navigation .main-navigation-item_current {
 	padding-bottom: 0px;
 }
-.main-navigation-item_current span {
+.main-navigation-item_current::after {
+	content: "";
 	display: block;
 	padding-bottom: 22px;
 	border-bottom: 4px solid #ffffff;
@@ -625,6 +626,9 @@ body.regular-page {
 }
 .products-item:nth-child(3n) {
 	margin-right: 0;
+}
+.products-item:hover {
+	box-shadow: 0px 0px 40px #cccccc;
 }
 .products-item-photo {
 	width: 220px;
