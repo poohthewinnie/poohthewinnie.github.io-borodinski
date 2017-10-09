@@ -7,15 +7,15 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="regular-page">
+<body class="inner-page">
 	<header class="page-header">
 		<div class="container clearfix">
 			<nav class="main-navigation">
+				<a href="index.html" class="inner-logo"><img src="img/page-header-logo.png" alt="Главная" width="111" height="24"></a>
 				<ul>
-					<li><a href="index.html" class="main-navigation-item_logo"><img src="img/page-header-logo.png" alt="Главная" width="111" height="24"></a></li>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
-					<li><a href="price.html" class="main-navigation-item_current">Прайс-лист</a></li>
+					<li class="active"><span>Прайс-лист</span></li>
 					<li><a href="shop.html">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
@@ -26,48 +26,54 @@
 		</div>
 	</header>
 	<main class="container">
-		<h1 class="page-title">Прайс-лист</h1>
-		<ul class="breadcrumbs">
-			<li><a href="index.html">Главная</a></li>
-			<li><span class="breadcrumbs_current">Прайс-лист</span></li>
-		</ul>
-		<div class="pricelist-content clearfix">
-			<b class="pricelist-promotitle">Истинно мужская классика</b>
-			<section class="pricelist-content-left">
-				<h3>Мы используем только лучшие средства:</h3>
-				<ul class="list list-loose">
-					<li>Baxter of California</li>
-					<li>Mr Natty</li>
-					<li>Suavecito</li>
-					<li>Malin+Goetz</li>
-				</ul>
-			</section>
-			<section class="pricelist-content-right">
-				<h3>Цены на услуги наших&nbsp;мастеров:</h3>
-				<table class="price-table">
-					<tr>
-						<td>Стрижка</td>
-						<td>1500 р.</td>
-					</tr>
-					<tr>
-						<td>Стрижка бороды</td>
-						<td>500 р.</td>
-					</tr>
-					<tr>
-						<td>Накрутка усов</td>
-						<td>350 р.</td>
-					</tr>
-				</table>
-			</section>
+		<div class="inner-page-title">
+			<h1>Прайс-лист</h1>
+			<ul class="breadcrumbs">
+				<li><a href="index.html">Главная</a></li>
+				<li class="current"><span>Прайс-лист</span></li>
+			</ul>
 		</div>
-		<div class="pricelist-content clearfix">
-			<h3>Несколько слов о нас:</h3>
-			<section class="pricelist-content-left">
-				<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас&nbsp;&mdash; это уникальная и&nbsp;продуманная до&nbsp;мелочей работа. Мы&nbsp;не&nbsp;работаем на&nbsp;количество, мы&nbsp;делаем качество.</p>
-			</section>
-			<section class="pricelist-content-right">
-				<p>Наша мастерская расположена в&nbsp;центре города, поэтому сделать стильную стрижку можно в&nbsp;любое время, даже в&nbsp;обеденный перерыв. Здесь вы&nbsp;можете погрузиться в&nbsp;удобную для вас атмосферу, чувствовать себя комфортно и&nbsp;свободно!</p>
-			</section>
+		<div class="inner-content">
+			<div class="pricelist-promotitle">
+				<h2 class="pricelist-promotitle">Истинно мужская классика</h2>
+			</div>
+			<div class="inner-columns clearfix">
+				<div class="inner-column-left">
+					<h2>Мы используем только лучшие средства:</h2>
+					<ul class="list list-loose">
+						<li>Baxter of California</li>
+						<li>Mr Natty</li>
+						<li>Suavecito</li>
+						<li>Malin+Goetz</li>
+					</ul>
+				</div>
+				<div class="inner-column-right">
+					<h2>Цены на услуги наших&nbsp;мастеров:</h2>
+					<table class="price-table">
+						<tr>
+							<td>Стрижка</td>
+							<td>1500 р.</td>
+						</tr>
+						<tr>
+							<td>Стрижка бороды</td>
+							<td>500 р.</td>
+						</tr>
+						<tr>
+							<td>Накрутка усов</td>
+							<td>350 р.</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="inner-columns clearfix">
+				<h2>Несколько слов о нас:</h2>
+				<div class="inner-column-left">
+					<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас&nbsp;&mdash; это уникальная и&nbsp;продуманная до&nbsp;мелочей работа. Мы&nbsp;не&nbsp;работаем на&nbsp;количество, мы&nbsp;делаем качество.</p>
+				</div>
+				<div class="inner-column-right">
+					<p>Наша мастерская расположена в&nbsp;центре города, поэтому сделать стильную стрижку можно в&nbsp;любое время, даже в&nbsp;обеденный перерыв. Здесь вы&nbsp;можете погрузиться в&nbsp;удобную для вас атмосферу, чувствовать себя комфортно и&nbsp;свободно!</p>
+				</div>
+			</div>
 		</div>
 	</main>
 	<footer class="page-footer clearfix">
