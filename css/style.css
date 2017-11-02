@@ -189,7 +189,7 @@ body {
 	left: 20px;
 	width: 18px;
 	height: 18px;
-	background: url("../img/sprite.png") no-repeat -15px -119px;
+	background: url("../img/sprite.png") no-repeat 0 -238px;
 	opacity: 0.3;
 }
 .user-block .login:hover {
@@ -398,22 +398,22 @@ body {
 	background: #ffffff url("../img/sprite.png") no-repeat center;
 }
 .btn_vk {
-    background-position: -6px -299px;
+    background-position: 9px -189px;
 }
 .btn_fb {
-    background-position: 1px -57px;
+    background-position: 15px -32px;
 }
 .btn_inst {
-    background-position: -3px -206px;
+    background-position: 11px -114px;
 }
 .btn_vk:hover {
-    background-position: -6px -253px;
+    background-position: 9px -153px;
 }
 .btn_fb:hover {
-    background-position: 1px -5px;
+    background-position: 15px 10px;
 }
 .btn_inst:hover {
-    background-position: -3px -155px;
+    background-position: 11px -73px;
 }
 .page-footer-copyright {
 	float: right;
@@ -428,7 +428,7 @@ body {
 }
 
 .popup {
-	/*display: none;*/
+	display: none;
 }
 .popup-show {
 	display: block;
@@ -477,9 +477,8 @@ body {
 	top: 120px;
 	left: 50%;
 	margin-left: -230px;
-	padding: 50px 80px;
+	padding: 50px 80px 35px 80px;
 	width: 300px;
-	height: 280px;
 	z-index: 100;
 	background: #f8f5f2 url(../img/bg-light-pattern.jpeg);
 	color: #000000;
@@ -493,31 +492,54 @@ body {
 .login-form .password {
 	margin: 0;
 	margin-bottom: 10px;
-	width: 241px;
+	width: 246px;
 	padding: 10px 20px;
-	padding-right: 35px;
+	padding-right: 30px;
 	border: 2px solid #000000;
 	outline: 0;
 	font-size: 14px;
-	line-heignt: 24px;
+	line-height: 24px;
 	font-family: "PT Sans Narrow", "Arial", sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #000000;
 	background-color: #f9f6f3;
 }
-.login-form input:focus {
+.login-form input::-webkit-input-placeholder {
+	color: #000000;
+}
+.login-form input:-ms-input-placeholder {
+	color: #000000;
+}
+.login-form input::placeholder {
+	color: #000000;
+}
+.login-form input:focus,
+.login-form input:hover {
 	border-color: #663d15;
+}
+.login-form input:hover::-webkit-input-placeholder {
+	color: #663d15;
+}
+.login-form input:hover:-ms-input-placeholder {
+	color: #663d15;
+}
+.login-form input:hover::placeholder {
+	color: #663d15;
 }
 .login-form .username {
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-position: 100% 0px;
+	background-position: 100% -298px;
 }
 .login-form .password {
-	ackground-image: url(../img/sprite.png);
+	margin-bottom: 15px;
+	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-position: 100% 0px;
+	background-position: 100% -261px;
+}
+.login-form .remember-checkbox {
+	margin-bottom: 15px;
 }
 .login-form .password-restore {
 	float: right;
@@ -526,11 +548,14 @@ body {
 .login-form .password-restore:hover {
 	text-decoration: none;
 }
+.login-form .login-btn {
+	display: block;
+	width: 100%;
+}
 
 /* CUSTOM CHECKBOX */
 .checkbox-label {
 	position: relative;
-	margin-bottom: 15px;
 	padding-left: 30px;
 	cursor: pointer;
 }
@@ -563,7 +588,7 @@ body {
 .checkbox-label .checkbox-indicator::after {
 	transform: rotate(-45deg);
 }
-
+/* end CUSTOM CHECKBOX */
 .inner-page .page-header {
 	margin-bottom: 55px;
 }
@@ -910,47 +935,51 @@ body {
 .sprite {
     background-image: url("");
     background-repeat: no-repeat;
-
+}
 .sprite-fb-black {
     width: 12px;
     height: 22px;
-    background-position: -15px -15px;
+    background-position: 0 0;
 }
-
 .sprite-fb-white {
     width: 12px;
     height: 22px;
-    background-position: -15px -67px;
+    background-position: 0 -42px;
 }
-
-.sprite-icon-login {
-    width: 18px;
-    height: 16px;
-    background-position: -15px -119px;
-}
-
 .sprite-inst-black {
     width: 21px;
     height: 21px;
-    background-position: -15px -165px;
+    background-position: 0 -84px;
 }
-
 .sprite-inst-white {
     width: 21px;
     height: 21px;
-    background-position: -15px -216px;
+    background-position: 0 -125px;
 }
-
 .sprite-vk-black {
     width: 25px;
     height: 16px;
-    background-position: -15px -267px;
+    background-position: 0 -166px;
 }
-
 .sprite-vk-white {
     width: 25px;
     height: 16px;
-    background-position: -15px -313px;
+    background-position: 0 -202px;
+}
+.sprite-icon-login {
+    width: 18px;
+    height: 16px;
+    background-position: 0 -238px;
+}
+.sprite-lock {
+	width: 15px;
+	height: 17px;
+	background-position: 0 -274px;
+}
+.sprite-user {
+	width: 15px;
+	height: 15px;
+	background-position: 0 -311px;
 }
 */
 
