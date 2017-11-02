@@ -589,6 +589,39 @@ body {
 	transform: rotate(-45deg);
 }
 /* end CUSTOM CHECKBOX */
+/* CUSTOM RADIOBUTTON */
+.radiobtn-label {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+	line-height: 20px;
+}
+.radiobtn-label:hover {
+	color: #663d15;
+}
+.radiobtn-label input[type=radio] {
+	display: none;
+}
+.radiobtn-label .radiobtn-indicator {
+	position: absolute;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #000000;
+	border-radius: 50%;
+}
+.radiobtn-label input[type=radio]:checked + .radiobtn-indicator::before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 10px;
+	height: 10px;
+	background: #000000;
+	border-radius: 50%;
+}
+/* end CUSTOM RADIOBUTTON */
 .inner-page .page-header {
 	margin-bottom: 55px;
 }
@@ -802,6 +835,14 @@ body {
 	font-size: 24px;
 	line-height: 32px;
 }
+.manufacturer-checkbox {
+	margin-bottom: 15px;
+	padding-left: 45px;
+}
+.group-radiobtn {
+	margin-bottom: 15px;
+	padding-left: 45px;
+}
 .products {
 	float: right;
 	width: 700px;
@@ -845,7 +886,7 @@ body {
 	padding: 0 15px 15px 15px;
 }
 .products-item-name:hover {
-	color: #aba9a7;
+	color: #663d15;
 }
 .products-item-category {
 	text-transform: none;

@@ -38,18 +38,18 @@
 			<form action="" method="get" class="products-filter">
 				<fieldset class="products-filter-fieldset">
 					<legend class="fieldset-title">Производители:</legend>
-					<label class="checkbox-label"><input type="checkbox" class="checkbox" value="1" checked>Baxter of California</label>
-					<label class="checkbox-label"><input type="checkbox" class="checkbox" value="2">Mr Natty</label>
-					<label class="checkbox-label"><input type="checkbox" class="checkbox" value="3" checked>Suavecito</label>
-					<label class="checkbox-label"><input type="checkbox" class="checkbox" value="4">Malin+Goetz</label>
-					<label class="checkbox-label"><input type="checkbox" class="checkbox" value="5">Murray's</label>
-					<label class="checkbox-label"><input type="checkbox" class="checkbox" value="6" checked>American crew</label>
+					<label class="checkbox-label manufacturer-checkbox"><input type="checkbox" value="1" checked><span class="checkbox-indicator"></span>Baxter of California</label>
+					<label class="checkbox-label manufacturer-checkbox"><input type="checkbox" value="2"><span class="checkbox-indicator"></span>Mr Natty</label>
+					<label class="checkbox-label manufacturer-checkbox"><input type="checkbox" value="3" checked><span class="checkbox-indicator"></span>Suavecito</label>
+					<label class="checkbox-label manufacturer-checkbox"><input type="checkbox" value="4"><span class="checkbox-indicator"></span>Malin+Goetz</label>
+					<label class="checkbox-label manufacturer-checkbox"><input type="checkbox" value="5"><span class="checkbox-indicator"></span>Murray's</label>
+					<label class="checkbox-label manufacturer-checkbox"><input type="checkbox" value="6" checked><span class="checkbox-indicator"></span>American crew</label>
 				</fieldset>
 				<fieldset class="products-filter-fieldset">
 					<legend class="fieldset-title">Группы товаров:</legend>
-					<label class="radiobtn-label"><input type="radio" class="radiobtn" name="category" value="1">Бритвенные принадлежности</label>
-					<label class="radiobtn-label"><input type="radio" class="radiobtn" name="category" value="2" checked>Средства для ухода</label>
-					<label class="radiobtn-label"><input type="radio" class="radiobtn" name="category" value="3">Аксессуары</label>
+					<label class="radiobtn-label group-radiobtn"><input type="radio" name="category" value="1"><span class="radiobtn-indicator"></span>Бритвенные принадлежности</label>
+					<label class="radiobtn-label group-radiobtn"><input type="radio" name="category" value="2" checked><span class="radiobtn-indicator"></span>Средства для ухода</label>
+					<label class="radiobtn-label group-radiobtn"><input type="radio" name="category" value="3"><span class="radiobtn-indicator"></span>Аксессуары</label>
 				</fieldset>
 				<button type="button" class="btn">Показать</button>
 			</form>
@@ -151,9 +151,26 @@
 			</section>
 			<section class="page-footer-copyright">
 				<p>Разработано:</p>
-				<a href="#" class="btn">Htmlacademy</a>
+				<a href="#" class="btn">Htmlacademy & GarnetEternity</a>
 			</section>
 		</div>
 	</footer>
+  <div class="popup login-popup">
+    <button type="button" class="popup-btn-close">Закрыть</button>
+    <h2>Личный кабинет</h2>
+    <p>Введите пожалуйста ваш логин и пароль</p>
+    <form action="#" method="post" class="login-form">
+      <input type="text" name="username" placeholder="Логин" class="username">
+      <input type="password" name="password" placeholder="Пароль" class="password">
+      <label class="checkbox-label remember-checkbox">
+        <input type="checkbox">
+        <span class="checkbox-indicator"></span>
+        Запомните меня
+      </label>
+      <a href="#" class="password-restore">Я забыл пароль!</a>
+      <button type="submit" class="btn login-btn">Войти</button>
+    </form>
+  </div>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
